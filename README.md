@@ -13,7 +13,8 @@ to the graylog2 servers plugin/outputs directory and do a restart. It compiles t
 nice small jar.
 
 To get all messages to the plugin, create a stream (called Tail in our case) and in
-the 'Outputs' tab attach it to the socket plugin.
+the 'Outputs' tab attach it to the socket plugin. Now telnet to the graylog server on
+the port and enjoy ...
 
 Ive included a perl script that will connect to a graylog2 server using this plugin
 and parse, then format messages from the port ... use -h to see options, typically:
