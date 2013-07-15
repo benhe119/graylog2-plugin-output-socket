@@ -12,9 +12,9 @@ Compile, (mvn clean package) and rename the target jar (rename.sh), then copy
 to the graylog2 servers plugin/outputs directory and do a restart. It compiles to a
 nice small jar.
 
-To get all messages to the plugin, create a stream (called Tail in our case) and in
-the 'Outputs' tab attach it to the socket plugin. Now telnet to the graylog server on
-the port and enjoy ...
+To get all messages to the plugin, create a stream (called Tail in our case) that
+collects all DEBUG level messages and up, in the 'Outputs' tab, attach it to the
+socket plugin. Now telnet to the graylog server on the port and enjoy ...
 
 Ive included a perl script that will connect to a graylog2 server using this plugin
 and parse, then format messages from the port ... use -h to see options, typically:
